@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :infection %><br>
-    <%= f.text_field :infection %>
+    <%= f.select :infection, [ 'Common Cold ', 'Fever', 'Viral', 'Bacterial' ], :prompt => 'Please select' %>
   </div>
   <div class="actions">
     <%= f.submit %>
