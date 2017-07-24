@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @pt_record.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @pt_record.lastname %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @pt_record.string %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @pt_record.email %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @pt_record.birthdate %>
+</p>
+
+<p>
+  <strong>Infection:</strong>
+  <%= @pt_record.infection %>
+</p>
+
+<%= link_to 'Edit', edit_pt_record_path(@pt_record) %> |
+<%= link_to 'Back', pt_records_path %>

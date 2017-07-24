@@ -1,0 +1,41 @@
+<%= form_for(@pt_record) do |f| %>
+  <% if @pt_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pt_record.errors.count, "error") %> prohibited this pt_record from being saved:</h2>
+
+      <ul>
+      <% @pt_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br>
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.datetime_select :birthdate %>
+  </div>
+  <div class="field">
+    <%= f.label :infection %><br>
+    <%= f.text_field :infection %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
