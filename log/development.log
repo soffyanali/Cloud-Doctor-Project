@@ -174,3 +174,330 @@ Migrating to DeviseCreateUsers (20170724173923)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:21:13 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#index as HTML
+  [1m[35mPtRecord Load (0.3ms)[0m  SELECT "pt_records".* FROM "pt_records"
+  Rendered pt_records/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 349ms (Views: 335.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 83.136.45.59 at 2017-07-25 15:21:14 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pt_records/new" for 83.136.45.59 at 2017-07-25 15:21:16 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  Rendered pt_records/_form.html.erb (151.2ms)
+  Rendered pt_records/new.html.erb within layouts/application (160.3ms)
+Completed 200 OK in 186ms (Views: 177.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pt_records/new" for 83.136.45.59 at 2017-07-25 15:23:30 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#new as HTML
+  Rendered pt_records/_form.html.erb (24.7ms)
+  Rendered pt_records/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 291ms (Views: 275.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pt_records/new" for 83.136.45.59 at 2017-07-25 15:23:56 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#new as HTML
+  Rendered pt_records/_form.html.erb (26.3ms)
+  Rendered pt_records/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 307ms (Views: 289.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:23:59 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT "pt_records".* FROM "pt_records"
+  Rendered pt_records/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:24:03 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 63ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 83.136.45.59 at 2017-07-25 15:24:10 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 83.136.45.59 at 2017-07-25 15:24:23 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+3v9qnAbpBAuMfhlYTDfi2vTEKob2v3JPOgONJsYnT4YKHAQKmFBwUctO9HzvyDWJBcibKYlixXqR+u7VEhwmg==", "user"=>{"email"=>"vv@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'vv@email.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 268ms (Views: 24.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 83.136.45.59 at 2017-07-25 15:24:35 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zB/lJxonZdGKN3xNAKZJeiRm5j52bwGQjWNthGLAhs8vTGidQF2AAOMrv/mSKbYna6LU+MuQd0xbzIgLrZBraw==", "user"=>{"email"=>"vv@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'vv@email.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "vv@email.com"], ["encrypted_password", "$2a$11$ayJIqkClUqujaq9Mscr0reilMxNwp5Wud/a4XyxxLMwxGpUsP38Ca"], ["created_at", "2017-07-25 15:24:35.217752"], ["updated_at", "2017-07-25 15:24:35.217752"]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-07-25 15:24:35.232979"], ["current_sign_in_at", "2017-07-25 15:24:35.232979"], ["last_sign_in_ip", "83.136.45.59"], ["current_sign_in_ip", "83.136.45.59"], ["sign_in_count", 1], ["updated_at", "2017-07-25 15:24:35.233974"], ["id", 1]]
+  [1m[35m (9.5ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 196ms (ActiveRecord: 23.1ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:24:35 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[36mPtRecord Load (0.3ms)[0m  [1mSELECT "pt_records".* FROM "pt_records"[0m
+  Rendered pt_records/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pt_records/new" for 83.136.45.59 at 2017-07-25 15:24:59 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  Rendered pt_records/_form.html.erb (5.0ms)
+  Rendered pt_records/new.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 83.136.45.59 at 2017-07-25 15:25:07 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+K7gWBa7Xb6ULI6To5VtKnNElg19umsSEL5HP0d5swgb/W3iTMG4b/0wTScxGpJ3PICky8BFHc7GEaKwiClerA=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:25:08 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[36mPtRecord Load (0.2ms)[0m  [1mSELECT "pt_records".* FROM "pt_records"[0m
+  Rendered pt_records/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:26:09 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:26:10 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 35ms (Views: 26.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:28:24 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:28:28 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:28:31 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 83.136.45.59 at 2017-07-25 15:28:33 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:28:39 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:28:51 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Emg6f4SxyFGuQbfIwkD9JB1LEqFXf6xdH9lsdIAo6J4qtgQf+zzMkvMNG78m5BZ6WB8REYOEwyCsZv7A+0Grxg==", "user"=>{"email"=>"vv@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "vv@email.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-07-25 15:28:51.796751"], ["sign_in_count", 2], ["updated_at", "2017-07-25 15:28:51.797940"], ["id", 1]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 171ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:28:51 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pt_records/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/pt_records/index.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/pt_records/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/pt_records/index.html.erb:41: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:29:35 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT "pt_records".* FROM "pt_records"
+  Rendered pt_records/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 83.136.45.59 at 2017-07-25 15:29:39 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ntiUdLsTI/EttpYLBYdjNquiMNgINb1Q3sqWLuCQll51tQr5AN+xzBIIV2AJFAHyB173XvEDn5b5xarVI85aIw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:29:39 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:29:39 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 83.136.45.59 at 2017-07-25 15:29:54 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5KDI6QznS9fz777s2RycSp9DTJOH8aaylBvj+4t5lH6yFqiutU5u+JB8N+pvG8tm+EkReWeBtoK/aLWBRI26+g==", "user"=>{"email"=>"vv@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "vv@email.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-07-25 15:28:51.796751"], ["current_sign_in_at", "2017-07-25 15:29:54.592229"], ["sign_in_count", 3], ["updated_at", "2017-07-25 15:29:54.593470"], ["id", 1]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 312ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 83.136.45.59 at 2017-07-25 15:29:55 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPtRecord Load (0.2ms)[0m  [1mSELECT "pt_records".* FROM "pt_records"[0m
+  Rendered pt_records/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pt_records/new" for 83.136.45.59 at 2017-07-25 15:30:28 +0000
+Cannot render console from 83.136.45.59! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pt_records/_form.html.erb (11.0ms)
+  Rendered pt_records/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 99ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDtrecords (20170725181659)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "dtrecords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "string" varchar, "age" varchar, "user" varchar, "references" varchar, "clinic" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170725181659"]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+

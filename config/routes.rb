@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :dtrecords
   devise_for :users
   resources :pt_records
   root 'pt_records#index'

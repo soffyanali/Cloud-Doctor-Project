@@ -33,5 +33,6 @@
 </table>
 
 <br>
-
+<% if user_signed_in? %>
 <%= link_to 'New Pt record', new_pt_record_path %>
+<% end %>

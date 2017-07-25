@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Dtrecords</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>String</th>
+      <th>Age</th>
+      <th>String</th>
+      <th>User</th>
+      <th>References</th>
+      <th>Clinic</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dtrecords.each do |dtrecord| %>
+      <tr>
+        <td><%= dtrecord.name %></td>
+        <td><%= dtrecord.string %></td>
+        <td><%= dtrecord.age %></td>
+        <td><%= dtrecord.string %></td>
+        <td><%= dtrecord.user %></td>
+        <td><%= dtrecord.references %></td>
+        <td><%= dtrecord.clinic %></td>
+        <td><%= dtrecord.string %></td>
+        <td><%= link_to 'Show', dtrecord %></td>
+        <td><%= link_to 'Edit', edit_dtrecord_path(dtrecord) %></td>
+        <td><%= link_to 'Destroy', dtrecord, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dtrecord', new_dtrecord_path %>
