@@ -2107,3 +2107,1489 @@ Migrating to CreateLocations (20170803173414)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 17:41:29 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 466ms (Views: 448.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 17:41:30 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 17:41:30 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 17:41:33 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (50.8ms)
+  Rendered locations/new.html.erb within layouts/application (59.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 157ms (Views: 148.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:42:40 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAuWyKa+MpGYdtAyPbTudxWNlM9bMh7fDaQgYYCED8jc1H7OVgnbdCyv/lv7j7RVWWdO3gI7RkrKbT55xKBaDQ==", "search"=>"spire"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:42:55 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAuWyKa+MpGYdtAyPbTudxWNlM9bMh7fDaQgYYCED8jc1H7OVgnbdCyv/lv7j7RVWWdO3gI7RkrKbT55xKBaDQ==", "search"=>"spire"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:43:38 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAuWyKa+MpGYdtAyPbTudxWNlM9bMh7fDaQgYYCED8jc1H7OVgnbdCyv/lv7j7RVWWdO3gI7RkrKbT55xKBaDQ==", "search"=>"dublin"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:43:42 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lAuWyKa+MpGYdtAyPbTudxWNlM9bMh7fDaQgYYCED8jc1H7OVgnbdCyv/lv7j7RVWWdO3gI7RkrKbT55xKBaDQ==", "search"=>"dublin"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.3ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 17:45:39 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 17:45:44 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.8ms)
+  Rendered locations/new.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:45:59 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k53SqNM64NJhfkGTMNRI8HZmQ2/2Z/fX+LSGSZlcoc7bQjquI40JN9Wnb/r27xLSOoyZfq9ur0I/fZhR3Xj0Cw==", "search"=>"ncirl"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:46:05 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k53SqNM64NJhfkGTMNRI8HZmQ2/2Z/fX+LSGSZlcoc7bQjquI40JN9Wnb/r27xLSOoyZfq9ur0I/fZhR3Xj0Cw==", "search"=>"trinity"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/locati" for 193.1.209.156 at 2017-08-03 17:47:28 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/locati"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.3ms)
+
+
+Started GET "/locattions" for 193.1.209.156 at 2017-08-03 17:47:49 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/locattions"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.9ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 17:47:54 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 17:47:58 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.2ms)
+  Rendered locations/new.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:48:04 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1gos0mGc4L0TVK6l88c8RIiLYxReLpc6T2lgBmPYZ7+e1cTUkSsJWKeNgMw1/GZmxGG5BQcnz6+IoH4eJ/wyeg==", "search"=>"clontarf"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:49:25 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1gos0mGc4L0TVK6l88c8RIiLYxReLpc6T2lgBmPYZ7+e1cTUkSsJWKeNgMw1/GZmxGG5BQcnz6+IoH4eJ/wyeg==", "search"=>"clontarf"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:80:in `location_params'
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.5ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:49:55 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1gos0mGc4L0TVK6l88c8RIiLYxReLpc6T2lgBmPYZ7+e1cTUkSsJWKeNgMw1/GZmxGG5BQcnz6+IoH4eJ/wyeg==", "search"=>"clontarf"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `location_params' for #<LocationsController:0x007faa9c97e4d0>
+Did you mean?  location_path):
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (32.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.6ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 17:52:53 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 433ms (Views: 354.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 17:53:01 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (48.5ms)
+  Rendered locations/new.html.erb within layouts/application (53.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 105ms (Views: 99.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 17:53:08 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Baos/+hx7BAJqaG/xNOCBYUDpmRYD72dXu2VVJXblQxNdcT5GMYF9b1wj9YC6Ngnyel8dQEG5QiZJItM0f/AyQ==", "search"=>"spire"}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `location_params' for #<LocationsController:0x007f8b997682f8>
+Did you mean?  location_path):
+  app/controllers/locations_controller.rb:35:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.0ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:08:15 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Baos/+hx7BAJqaG/xNOCBYUDpmRYD72dXu2VVJXblQxNdcT5GMYF9b1wj9YC6Ngnyel8dQEG5QiZJItM0f/AyQ==", "search"=>"spire"}
+Completed 400 Bad Request in 15ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: location):
+  app/controllers/locations_controller.rb:76:in `location_params'
+  app/controllers/locations_controller.rb:31:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 18:08:21 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 353ms (Views: 351.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/locations?utf8=%E2%9C%93&search=spire" for 193.1.209.156 at 2017-08-03 18:08:30 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"spire"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT locations.*, NULL AS distance, NULL AS bearing FROM "locations" WHERE (0)
+  Rendered locations/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 598ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 18:08:37 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (46.7ms)
+  Rendered locations/new.html.erb within layouts/application (55.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 104ms (Views: 92.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:08:43 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79wvYcW2NoSXsEgomL7+disGaAOEpAnd2sVUx1nSeianA8dnNQHfYSNpZkFehaRUZ+yyEt2tUUgdDErfHfYv4w==", "location"=>{"address"=>"spire", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "locations" ("address", "created_at", "updated_at") VALUES (?, ?, ?)  [["address", "spire"], ["created_at", "2017-08-03 18:08:43.884057"], ["updated_at", "2017-08-03 18:08:43.884057"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/1
+Completed 302 Found in 20ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/locations/1" for 193.1.209.156 at 2017-08-03 18:08:44 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered locations/show.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5: 
+     6: <h3>Nearby locations</h3>
+     7: <ul>
+     8: <% for location in @location.nearbys(10) %>
+     9:   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
+    10: <% end %>
+    11: </ul>
+  app/views/locations/show.html.erb:8:in `_app_views_locations_show_html_erb__3378535335000676324_69968792593100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.5ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:09:11 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79wvYcW2NoSXsEgomL7+disGaAOEpAnd2sVUx1nSeianA8dnNQHfYSNpZkFehaRUZ+yyEt2tUUgdDErfHfYv4w==", "location"=>{"address"=>"spire", "latitude"=>"44", "longitude"=>"47"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "spire"], ["latitude", 44.0], ["longitude", 47.0], ["created_at", "2017-08-03 18:09:11.732693"], ["updated_at", "2017-08-03 18:09:11.732693"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/2
+Completed 302 Found in 18ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/locations/2" for 193.1.209.156 at 2017-08-03 18:09:11 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLocation Load (4.8ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 44.0) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - 47.0) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 44.0 AND locations.longitude >= 47.0) THEN  45.0 WHEN (locations.latitude <  44.0 AND locations.longitude >= 47.0) THEN 135.0 WHEN (locations.latitude <  44.0 AND locations.longitude <  47.0) THEN 225.0 WHEN (locations.latitude >= 44.0 AND locations.longitude <  47.0) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 43.85526821688915 AND 44.14473178311085 AND locations.longitude BETWEEN 46.79879914465638 AND 47.20120085534362 AND locations.id != 2)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:09:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79wvYcW2NoSXsEgomL7+disGaAOEpAnd2sVUx1nSeianA8dnNQHfYSNpZkFehaRUZ+yyEt2tUUgdDErfHfYv4w==", "location"=>{"address"=>"spire", "latitude"=>"44", "longitude"=>"47"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "spire"], ["latitude", 44.0], ["longitude", 47.0], ["created_at", "2017-08-03 18:09:20.019567"], ["updated_at", "2017-08-03 18:09:20.019567"]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/3
+Completed 302 Found in 18ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/locations/3" for 193.1.209.156 at 2017-08-03 18:09:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 44.0) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - 47.0) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 44.0 AND locations.longitude >= 47.0) THEN  45.0 WHEN (locations.latitude <  44.0 AND locations.longitude >= 47.0) THEN 135.0 WHEN (locations.latitude <  44.0 AND locations.longitude <  47.0) THEN 225.0 WHEN (locations.latitude >= 44.0 AND locations.longitude <  47.0) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 43.85526821688915 AND 44.14473178311085 AND locations.longitude BETWEEN 46.79879914465638 AND 47.20120085534362 AND locations.id != 3)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:09:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79wvYcW2NoSXsEgomL7+disGaAOEpAnd2sVUx1nSeianA8dnNQHfYSNpZkFehaRUZ+yyEt2tUUgdDErfHfYv4w==", "location"=>{"address"=>"ncirl", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "ncirl"], ["latitude", 53.34881739999999], ["longitude", -6.2431793], ["created_at", "2017-08-03 18:09:34.833229"], ["updated_at", "2017-08-03 18:09:34.833229"]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/4
+Completed 302 Found in 462ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/locations/4" for 193.1.209.156 at 2017-08-03 18:09:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 53.20408561688914 AND 53.49354918311084 AND locations.longitude BETWEEN -6.485634734776495 AND -6.000723865223506 AND locations.id != 4)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:10:21 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79wvYcW2NoSXsEgomL7+disGaAOEpAnd2sVUx1nSeianA8dnNQHfYSNpZkFehaRUZ+yyEt2tUUgdDErfHfYv4w==", "location"=>{"address"=>"trinity", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "trinity"], ["latitude", 35.894581], ["longitude", -79.9908729], ["created_at", "2017-08-03 18:10:22.188915"], ["updated_at", "2017-08-03 18:10:22.188915"]]
+  [1m[36m (13.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/5
+Completed 302 Found in 1058ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/locations/5" for 193.1.209.156 at 2017-08-03 18:10:22 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 35.894581) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -79.9908729) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 35.894581 AND locations.longitude >= -79.9908729) THEN  45.0 WHEN (locations.latitude <  35.894581 AND locations.longitude >= -79.9908729) THEN 135.0 WHEN (locations.latitude <  35.894581 AND locations.longitude <  -79.9908729) THEN 225.0 WHEN (locations.latitude >= 35.894581 AND locations.longitude <  -79.9908729) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 35.74984921688915 AND 36.03931278311085 AND locations.longitude BETWEEN -80.16953269757664 AND -79.81221310242336 AND locations.id != 5)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pt_records/new" for 193.1.209.156 at 2017-08-03 18:10:55 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered pt_records/_form.html.erb (13.0ms)
+  Rendered pt_records/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 56ms (Views: 35.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 193.1.209.156 at 2017-08-03 18:12:51 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mPtRecord Load (0.2ms)[0m  [1mSELECT "pt_records".* FROM "pt_records"[0m
+  Rendered pt_records/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 193.1.209.156 at 2017-08-03 18:12:54 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m/B193dlU9vikDAv5Qe0PSQrLatixIsBk4zEYU0/h77TL53xh9K6PlZJHkYjPO4faMH3ujvN05RURdp5CRvSew=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 193.1.209.156 at 2017-08-03 18:12:55 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 193.1.209.156 at 2017-08-03 18:12:55 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 48ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 193.1.209.156 at 2017-08-03 18:12:59 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XPtoOOFoKp8z5uTyXksl7zoulWbu96LZD6ys+sfS16kXMGinq9dzx1oj4YvP+P26uPSRogBv2C63TVyAbnIy6g==", "user"=>{"email"=>"shhh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "shhh@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-08-03 17:13:36.302399"], ["current_sign_in_at", "2017-08-03 18:12:59.804182"], ["sign_in_count", 7], ["updated_at", "2017-08-03 18:12:59.805335"], ["id", 4]]
+  [1m[35m (11.5ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/signedinuserdoctorprofile
+Completed 302 Found in 189ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/signedinuserdoctorprofile" for 193.1.209.156 at 2017-08-03 18:12:59 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#signedinuserdoctorprofile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mDoctorprofile Load (0.2ms)[0m  SELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1  [["user_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1[0m  [["user_id", 4]]
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/1
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/doctorprofiles/1" for 193.1.209.156 at 2017-08-03 18:13:00 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDoctorprofile Load (0.3ms)[0m  SELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered doctorprofiles/show.html.erb within layouts/application (16.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 193.1.209.156 at 2017-08-03 18:13:08 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cNnzaZG5F6xYsuetgt2b2jm61W4Fbp5Vpka6X/vd28G/nlEW8RcxZg6kEFVM5xjmfCO7FNwbuxxHXH7kXk60Kw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 193.1.209.156 at 2017-08-03 18:13:08 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cNnzaZG5F6xYsuetgt2b2jm61W4Fbp5Vpka6X/vd28G/nlEW8RcxZg6kEFVM5xjmfCO7FNwbuxxHXH7kXk60Kw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 193.1.209.156 at 2017-08-03 18:13:08 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 193.1.209.156 at 2017-08-03 18:13:08 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 193.1.209.156 at 2017-08-03 18:13:12 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 193.1.209.156 at 2017-08-03 18:13:27 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fCHBysYhnDAnV8uXTJcPzwbOYt+hHdOcmy2xn5E8nhyz5g5VX54UD3CRxP5JGTCRb7b2O5Y+nU+ijXBihg/4eg==", "user"=>{"email"=>"soyan@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'soyan@gmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "soyan@gmail.com"], ["encrypted_password", "$2a$11$HQ4.rm.X//cmygY4zBljOu7xNE3apf/kvMN4IHjUuSFs0JWwJja5W"], ["created_at", "2017-08-03 18:13:27.556145"], ["updated_at", "2017-08-03 18:13:27.556145"]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-08-03 18:13:27.569425"], ["current_sign_in_at", "2017-08-03 18:13:27.569425"], ["last_sign_in_ip", "193.1.209.156"], ["current_sign_in_ip", "193.1.209.156"], ["sign_in_count", 1], ["updated_at", "2017-08-03 18:13:27.570275"], ["id", 5]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/signedinuserdoctorprofile
+Completed 302 Found in 192ms (ActiveRecord: 24.8ms)
+
+
+Started GET "/signedinuserdoctorprofile" for 193.1.209.156 at 2017-08-03 18:13:27 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#signedinuserdoctorprofile as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mDoctorprofile Load (0.1ms)[0m  [1mSELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1[0m  [["user_id", 5]]
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/doctorprofiles/new" for 193.1.209.156 at 2017-08-03 18:13:27 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered doctorprofiles/_form.html.erb (3.9ms)
+  Rendered doctorprofiles/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/doctorprofiles" for 193.1.209.156 at 2017-08-03 18:13:53 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HAzRUZeaklaLajQHTfXO9+uy5e/QytiS2kIJD1tNbMfTyx7ODiUaadysO25Ie/GpgspxC+fplkHj4sjyTH4KoQ==", "doctorprofile"=>{"firstname"=>"", "lastname"=>"", "qualification"=>"", "clinic"=>"", "user_id"=>"5"}, "commit"=>"Create Doctorprofile"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "doctorprofiles" ("firstname", "lastname", "qualification", "clinic", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["qualification", ""], ["clinic", ""], ["user_id", 5], ["created_at", "2017-08-03 18:13:53.565134"], ["updated_at", "2017-08-03 18:13:53.565134"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/2
+Completed 302 Found in 17ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/doctorprofiles/2" for 193.1.209.156 at 2017-08-03 18:13:53 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mDoctorprofile Load (0.2ms)[0m  SELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered doctorprofiles/show.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pt_records/" for 193.1.209.156 at 2017-08-03 18:14:02 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT "pt_records".* FROM "pt_records"
+  Rendered pt_records/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pt_records/new" for 193.1.209.156 at 2017-08-03 18:14:05 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/_form.html.erb (5.8ms)
+  Rendered pt_records/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 18:15:05 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/4" for 193.1.209.156 at 2017-08-03 18:15:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 53.20408561688914 AND 53.49354918311084 AND locations.longitude BETWEEN -6.485634734776495 AND -6.000723865223506 AND locations.id != 4)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locations?utf8=%E2%9C%93&search=ncirl" for 193.1.209.156 at 2017-08-03 18:16:01 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"ncirl"}
+  [1m[36mLocation Load (1.0ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 52.62515848444575 AND 54.072476315554226 AND locations.longitude BETWEEN -7.4554564738824745 AND -5.030902126117526)  ORDER BY "locations"."distance" ASC[0m
+  Rendered locations/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: locations.distance: SELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 52.62515848444575 AND 54.072476315554226 AND locations.longitude BETWEEN -7.4554564738824745 AND -5.030902126117526)  ORDER BY "locations"."distance" ASC):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @locations.each do |location| %>
+    24:       <tr>
+    25:         <td><%= location.address %></td>
+    26:         <td><%= location.latitude %></td>
+  app/views/locations/index.html.erb:23:in `_app_views_locations_index_html_erb__2321102142310866565_7420500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.4ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 18:16:09 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.1ms)
+  Rendered locations/new.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:16:15 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ43hJTl4OD07fuqzchSLb9cFxl3ERvVyahdYPrYL6jDWfgbDVpo36Mr9MPIRm1z1iSD/UAyVQbwCJyd7etJzg==", "location"=>{"address"=>"ncirl", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "ncirl"], ["latitude", 53.34881739999999], ["longitude", -6.2431793], ["created_at", "2017-08-03 18:16:15.570993"], ["updated_at", "2017-08-03 18:16:15.570993"]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/6
+Completed 302 Found in 19ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/locations/6" for 193.1.209.156 at 2017-08-03 18:16:16 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mLocation Load (0.5ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 53.20408561688914 AND 53.49354918311084 AND locations.longitude BETWEEN -6.485634734776495 AND -6.000723865223506 AND locations.id != 6)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:16:43 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ43hJTl4OD07fuqzchSLb9cFxl3ERvVyahdYPrYL6jDWfgbDVpo36Mr9MPIRm1z1iSD/UAyVQbwCJyd7etJzg==", "location"=>{"address"=>"spire", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "created_at", "updated_at") VALUES (?, ?, ?)  [["address", "spire"], ["created_at", "2017-08-03 18:16:43.032554"], ["updated_at", "2017-08-03 18:16:43.032554"]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/7
+Completed 302 Found in 20ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/locations/7" for 193.1.209.156 at 2017-08-03 18:16:43 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered locations/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5: 
+     6: <h3>Nearby locations</h3>
+     7: <ul>
+     8: <% for location in @location.nearbys(10) %>
+     9:   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
+    10: <% end %>
+    11: </ul>
+  app/views/locations/show.html.erb:8:in `_app_views_locations_show_html_erb__3378535335000676324_69968792593100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.5ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:16:48 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ43hJTl4OD07fuqzchSLb9cFxl3ERvVyahdYPrYL6jDWfgbDVpo36Mr9MPIRm1z1iSD/UAyVQbwCJyd7etJzg==", "location"=>{"address"=>"spire", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "created_at", "updated_at") VALUES (?, ?, ?)  [["address", "spire"], ["created_at", "2017-08-03 18:16:48.869031"], ["updated_at", "2017-08-03 18:16:48.869031"]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/8
+Completed 302 Found in 25ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/locations/8" for 193.1.209.156 at 2017-08-03 18:16:49 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered locations/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     5: 
+     6: <h3>Nearby locations</h3>
+     7: <ul>
+     8: <% for location in @location.nearbys(10) %>
+     9:   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
+    10: <% end %>
+    11: </ul>
+  app/views/locations/show.html.erb:8:in `_app_views_locations_show_html_erb__3378535335000676324_69968792593100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:17:02 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ43hJTl4OD07fuqzchSLb9cFxl3ERvVyahdYPrYL6jDWfgbDVpo36Mr9MPIRm1z1iSD/UAyVQbwCJyd7etJzg==", "location"=>{"address"=>"triniy", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "triniy"], ["latitude", 35.894581], ["longitude", -79.9908729], ["created_at", "2017-08-03 18:17:03.822955"], ["updated_at", "2017-08-03 18:17:03.822955"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/9
+Completed 302 Found in 986ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/locations/9" for 193.1.209.156 at 2017-08-03 18:17:04 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 35.894581) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -79.9908729) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 35.894581 AND locations.longitude >= -79.9908729) THEN  45.0 WHEN (locations.latitude <  35.894581 AND locations.longitude >= -79.9908729) THEN 135.0 WHEN (locations.latitude <  35.894581 AND locations.longitude <  -79.9908729) THEN 225.0 WHEN (locations.latitude >= 35.894581 AND locations.longitude <  -79.9908729) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 35.74984921688915 AND 36.03931278311085 AND locations.longitude BETWEEN -80.16953269757664 AND -79.81221310242336 AND locations.id != 9)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:17:40 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ43hJTl4OD07fuqzchSLb9cFxl3ERvVyahdYPrYL6jDWfgbDVpo36Mr9MPIRm1z1iSD/UAyVQbwCJyd7etJzg==", "location"=>{"address"=>"st james hospital", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "st james hospital"], ["latitude", 46.0084921], ["longitude", -112.5453147], ["created_at", "2017-08-03 18:17:40.680772"], ["updated_at", "2017-08-03 18:17:40.680772"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/10
+Completed 302 Found in 564ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/locations/10" for 193.1.209.156 at 2017-08-03 18:17:41 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 46.0084921) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -112.5453147) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 46.0084921 AND locations.longitude >= -112.5453147) THEN  45.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude >= -112.5453147) THEN 135.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude <  -112.5453147) THEN 225.0 WHEN (locations.latitude >= 46.0084921 AND locations.longitude <  -112.5453147) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 45.86376031688915 AND 46.15322388311085 AND locations.longitude BETWEEN -112.75369626981824 AND -112.33693313018178 AND locations.id != 10)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/locations/10" for 193.1.209.156 at 2017-08-03 18:20:12 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mLocation Load (0.3ms)[0m  SELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 46.0084921) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -112.5453147) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 46.0084921 AND locations.longitude >= -112.5453147) THEN  45.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude >= -112.5453147) THEN 135.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude <  -112.5453147) THEN 225.0 WHEN (locations.latitude >= 46.0084921 AND locations.longitude <  -112.5453147) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 45.86376031688915 AND 46.15322388311085 AND locations.longitude BETWEEN -112.75369626981824 AND -112.33693313018178 AND locations.id != 10)  ORDER BY distance ASC
+  Rendered locations/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:12 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:13 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/locations/10" for 193.1.209.156 at 2017-08-03 18:20:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 46.0084921) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -112.5453147) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 46.0084921 AND locations.longitude >= -112.5453147) THEN  45.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude >= -112.5453147) THEN 135.0 WHEN (locations.latitude <  46.0084921 AND locations.longitude <  -112.5453147) THEN 225.0 WHEN (locations.latitude >= 46.0084921 AND locations.longitude <  -112.5453147) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 45.86376031688915 AND 46.15322388311085 AND locations.longitude BETWEEN -112.75369626981824 AND -112.33693313018178 AND locations.id != 10)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/doctorprofiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 193.1.209.156 at 2017-08-03 18:20:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pt_records/" for 193.1.209.156 at 2017-08-03 18:20:30 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT "pt_records".* FROM "pt_records"
+  Rendered pt_records/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pt_records/new" for 193.1.209.156 at 2017-08-03 18:20:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/_form.html.erb (8.7ms)
+  Rendered pt_records/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:20:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:20:34.090722"], ["updated_at", "2017-08-03 18:20:34.090722"]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/3
+Completed 302 Found in 23ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/pt_records/3" for 193.1.209.156 at 2017-08-03 18:20:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPtRecord Load (0.3ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: unknown regexp options - www
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+....ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/dat...
+...                               ^):
+  app/views/pt_records/show.html.erb:35: unknown regexp options - www
+  app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:22:29 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (4.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:22:29.070726"], ["updated_at", "2017-08-03 18:22:29.070726"]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/4
+Completed 302 Found in 22ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/pt_records/4" for 193.1.209.156 at 2017-08-03 18:22:29 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: unknown regexp options - www
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+....ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/dat...
+...                               ^):
+  app/views/pt_records/show.html.erb:35: unknown regexp options - www
+  app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:24:59 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:24:59.152303"], ["updated_at", "2017-08-03 18:24:59.152303"]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/5
+Completed 302 Found in 17ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/pt_records/5" for 193.1.209.156 at 2017-08-03 18:24:59 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected tLABEL
+...er.append=  link_to url: https://www.google.ie/maps/place/Ma...
+...                               ^
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: unknown regexp options - www
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+....ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/dat...
+...                               ^):
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected tLABEL
+  app/views/pt_records/show.html.erb:35: unknown regexp options - www
+  app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/pt_records/5" for 193.1.209.156 at 2017-08-03 18:25:12 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPtRecord Load (0.1ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected tLABEL
+...er.append=  link_to url: https://www.google.ie/maps/place/Ma...
+...                               ^
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: unknown regexp options - www
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+....ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/dat...
+...                               ^):
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected tLABEL
+  app/views/pt_records/show.html.erb:35: unknown regexp options - www
+  app/views/pt_records/show.html.erb:35: `@5' is not allowed as an instance variable name
+  app/views/pt_records/show.html.erb:35: syntax error, unexpected end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.3ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:25:28 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:25:28.155502"], ["updated_at", "2017-08-03 18:25:28.155502"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/6
+Completed 302 Found in 14ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/pt_records/6" for 193.1.209.156 at 2017-08-03 18:25:28 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:36: syntax error, unexpected tLABEL
+...er.append=  link_to url: https://www.google.ie/maps/place/Ma...
+...                               ^
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:36: unknown regexp options - www
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:36: `@5' is not allowed as an instance variable name
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:36: syntax error, unexpected end-of-input
+....ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/dat...
+...                               ^):
+  app/views/pt_records/show.html.erb:36: syntax error, unexpected tLABEL
+  app/views/pt_records/show.html.erb:36: unknown regexp options - www
+  app/views/pt_records/show.html.erb:36: `@5' is not allowed as an instance variable name
+  app/views/pt_records/show.html.erb:36: syntax error, unexpected end-of-input
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:25:43 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:25:43.624942"], ["updated_at", "2017-08-03 18:25:43.624942"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/7
+Completed 302 Found in 18ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/pt_records/7" for 193.1.209.156 at 2017-08-03 18:25:43 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:33:49 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:33:49.666814"], ["updated_at", "2017-08-03 18:33:49.666814"]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/8
+Completed 302 Found in 18ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:33:50 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.3ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:37: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/pt_records/show.html.erb:39: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/pt_records/show.html.erb:37: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/pt_records/show.html.erb:39: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:16 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 193.1.209.156 at 2017-08-03 18:34:17 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:25 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.1ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:30 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.1ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.1ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:34:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.1ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pt_records/8" for 193.1.209.156 at 2017-08-03 18:35:28 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPtRecord Load (0.2ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/pt_records/show.html.erb:35: unknown regexp options - www):
+  app/views/pt_records/show.html.erb:35: unknown regexp options - www
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+
+
+Started POST "/pt_records" for 193.1.209.156 at 2017-08-03 18:36:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"014WEPsFH5ViYh4sGMJUEf1ABb0Qt+Kqf882wTKqwd8cmdmPYrqXqjWkEUUdTGtPlDiRWSeUrHlGb/c8JZmnuQ==", "pt_record"=>{"firstname"=>"", "lastname"=>"", "string"=>"", "email"=>"", "birthdate(1i)"=>"2017", "birthdate(2i)"=>"8", "birthdate(3i)"=>"3", "birthdate(4i)"=>"18", "birthdate(5i)"=>"20", "infection"=>""}, "commit"=>"Create Pt record"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pt_records" ("firstname", "lastname", "string", "email", "infection", "birthdate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["firstname", ""], ["lastname", ""], ["string", ""], ["email", ""], ["infection", ""], ["birthdate", "2017-08-03 18:20:00.000000"], ["created_at", "2017-08-03 18:36:19.858114"], ["updated_at", "2017-08-03 18:36:19.858114"]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/pt_records/9
+Completed 302 Found in 18ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/pt_records/9" for 193.1.209.156 at 2017-08-03 18:36:19 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPtRecord Load (108.5ms)[0m  SELECT  "pt_records".* FROM "pt_records" WHERE "pt_records"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered pt_records/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 139ms (Views: 27.0ms | ActiveRecord: 108.7ms)
+
+
+Started GET "/locations" for 193.1.209.156 at 2017-08-03 18:37:20 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (2.4ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/locations/4" for 193.1.209.156 at 2017-08-03 18:37:24 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mLocation Load (1.9ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.34881739999999) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.2431793) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude >= -6.2431793) THEN  45.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude >= -6.2431793) THEN 135.0 WHEN (locations.latitude <  53.34881739999999 AND locations.longitude <  -6.2431793) THEN 225.0 WHEN (locations.latitude >= 53.34881739999999 AND locations.longitude <  -6.2431793) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 53.20408561688914 AND 53.49354918311084 AND locations.longitude BETWEEN -6.485634734776495 AND -6.000723865223506 AND locations.id != 4)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (4.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/locations?utf8=%E2%9C%93&search=mater+hospital" for 193.1.209.156 at 2017-08-03 18:38:54 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"mater hospital"}
+  [1m[36mLocation Load (1.6ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.3586359) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.264919099999999) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.3586359 AND locations.longitude >= -6.264919099999999) THEN  45.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude >= -6.264919099999999) THEN 135.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude <  -6.264919099999999) THEN 225.0 WHEN (locations.latitude >= 53.3586359 AND locations.longitude <  -6.264919099999999) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 52.634976984445764 AND 54.08229481555424 AND locations.longitude BETWEEN -7.477475559520078 AND -5.05236264047992)  ORDER BY "locations"."distance" ASC[0m
+  Rendered locations/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: locations.distance: SELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.3586359) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.264919099999999) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.3586359 AND locations.longitude >= -6.264919099999999) THEN  45.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude >= -6.264919099999999) THEN 135.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude <  -6.264919099999999) THEN 225.0 WHEN (locations.latitude >= 53.3586359 AND locations.longitude <  -6.264919099999999) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 52.634976984445764 AND 54.08229481555424 AND locations.longitude BETWEEN -7.477475559520078 AND -5.05236264047992)  ORDER BY "locations"."distance" ASC):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @locations.each do |location| %>
+    24:       <tr>
+    25:         <td><%= location.address %></td>
+    26:         <td><%= location.latitude %></td>
+  app/views/locations/index.html.erb:23:in `_app_views_locations_index_html_erb__2321102142310866565_7420500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.1ms)
+
+
+Started GET "/locations/new" for 193.1.209.156 at 2017-08-03 18:38:58 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (2.1ms)
+  Rendered locations/new.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/locations" for 193.1.209.156 at 2017-08-03 18:39:03 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mspWb45m47TddKIiYGPFZC82ZUoAYW2O8nD3MEikuxVVDZnwF9lri4qyrUtl7fo6Rk7xrjdCI13L0DbNX5fdcw==", "location"=>{"address"=>"mater hospital", "latitude"=>"", "longitude"=>""}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "mater hospital"], ["latitude", 53.3586359], ["longitude", -6.264919099999999], ["created_at", "2017-08-03 18:39:03.183096"], ["updated_at", "2017-08-03 18:39:03.183096"]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/locations/11
+Completed 302 Found in 28ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/locations/11" for 193.1.209.156 at 2017-08-03 18:39:03 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mLocation Load (0.1ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT locations.*, (69.09332411348201 * ABS(locations.latitude - 53.3586359) * 0.7071067811865475) + (59.836573914187355 * ABS(locations.longitude - -6.264919099999999) * 0.7071067811865475) AS distance, CASE WHEN (locations.latitude >= 53.3586359 AND locations.longitude >= -6.264919099999999) THEN  45.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude >= -6.264919099999999) THEN 135.0 WHEN (locations.latitude <  53.3586359 AND locations.longitude <  -6.264919099999999) THEN 225.0 WHEN (locations.latitude >= 53.3586359 AND locations.longitude <  -6.264919099999999) THEN 315.0 END AS bearing FROM "locations" WHERE (locations.latitude BETWEEN 53.213904116889154 AND 53.50336768311085 AND locations.longitude BETWEEN -6.507430391904015 AND -6.022407808095983 AND locations.id != 11)  ORDER BY distance ASC[0m
+  Rendered locations/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.6ms)

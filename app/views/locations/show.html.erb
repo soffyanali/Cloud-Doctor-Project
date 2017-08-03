@@ -1,5 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+
+<h3>Nearby locations</h3>
+<ul>
+<% for location in @location.nearbys(10) %>
+  <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
+
 <p>
   <strong>Address:</strong>
   <%= @location.address %>
@@ -14,6 +24,9 @@
   <strong>Longitude:</strong>
   <%= @location.longitude %>
 </p>
+
+
+<%= link_to 'My hospital', "https://www.google.ie/maps/place/Mater+Hospital/@53.3614932,-6.2649776,15z/data=!4m5!3m4!1s0x48670e7ee9db6fdb:0x884a308d0a616f42!8m2!3d53.3586359!4d-6.2649191"  %>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
