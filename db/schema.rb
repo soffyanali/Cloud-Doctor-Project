@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170725181659) do
+ActiveRecord::Schema.define(version: 20170803164740) do
+
+  create_table "doctorprofiles", force: :cascade do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "qualification"
+    t.string   "clinic"
+    t.integer  "user_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "doctorprofiles", ["user_id"], name: "index_doctorprofiles_on_user_id"
 
   create_table "dtrecords", force: :cascade do |t|
     t.string   "name"

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :doctorprofiles
   #resources :dtrecords
   devise_for :users
   resources :pt_records
