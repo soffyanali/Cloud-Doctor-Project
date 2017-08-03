@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :pt_records
   root 'pt_records#index'
   #get '/signedinuserdtrecord' => 'dtrecords#signedinuserdtrecord'
-  #get '/signedinuserprofile' => 'profiles#signedinuserprofile'
+  get '/signedinuserdoctorprofile' => 'doctorprofiles#signedinuserdoctorprofile'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

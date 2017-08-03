@@ -1931,3 +1931,148 @@ Migrating to CreateDoctorprofiles (20170803164740)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started DELETE "/users/sign_out" for 193.1.209.156 at 2017-08-03 17:13:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a9BfZfl5dw0Tw3sJ+b+mwR5yF1APaxP2mGKmT2bnnPwH8krcA5gBr4JpSLt7X4DaRUQk6kugCa8coRoEDUUK1A=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/
+Completed 302 Found in 53ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 193.1.209.156 at 2017-08-03 17:13:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 193.1.209.156 at 2017-08-03 17:13:32 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 475ms (Views: 470.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/doctorprofiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 193.1.209.156 at 2017-08-03 17:13:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 193.1.209.156 at 2017-08-03 17:13:34 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users/sign_in" for 193.1.209.156 at 2017-08-03 17:13:36 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iAhUcpoy6Y6K7m1OKd4jLzHGuZKmvONkm1yZprDdyVW2YngiqEReZfLgeSxSWNYMt4XOo/Z9ReDPOsgcyJCV3Q==", "user"=>{"email"=>"shhh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "shhh@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-08-03 16:31:01.295423"], ["current_sign_in_at", "2017-08-03 17:13:36.302399"], ["sign_in_count", 6], ["updated_at", "2017-08-03 17:13:36.304396"], ["id", 4]]
+  [1m[35m (12.4ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/signedinuserdoctorprofile
+Completed 302 Found in 257ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/signedinuserdoctorprofile" for 193.1.209.156 at 2017-08-03 17:13:36 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#signedinuserdoctorprofile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mDoctorprofile Load (0.3ms)[0m  SELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1  [["user_id", 4]]
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/new
+Completed 302 Found in 29ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/doctorprofiles/new" for 193.1.209.156 at 2017-08-03 17:13:36 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered doctorprofiles/_form.html.erb (10.3ms)
+  Rendered doctorprofiles/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 75ms (Views: 57.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/doctorprofiles" for 193.1.209.156 at 2017-08-03 17:13:44 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0HXhn+qRFTzZUf57WNxoE7UaGUjqW+MvBgE6chslx4Pnj+Ajx2tsUe8aZArWCuCAj6ydHqgNxl70RrxjEjC2w==", "doctorprofile"=>{"firstname"=>"nil", "lastname"=>"nil", "qualification"=>"nil", "clinic"=>"nil", "user_id"=>"4"}, "commit"=>"Create Doctorprofile"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "doctorprofiles" ("firstname", "lastname", "qualification", "clinic", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "nil"], ["lastname", "nil"], ["qualification", "nil"], ["clinic", "nil"], ["user_id", 4], ["created_at", "2017-08-03 17:13:44.262619"], ["updated_at", "2017-08-03 17:13:44.262619"]]
+  [1m[35m (11.8ms)[0m  commit transaction
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/1
+Completed 302 Found in 19ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/doctorprofiles/1" for 193.1.209.156 at 2017-08-03 17:13:44 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoctorprofile Load (0.3ms)[0m  [1mSELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered doctorprofiles/show.html.erb within layouts/application (18.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 42ms (Views: 39.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctorprofiles" for 193.1.209.156 at 2017-08-03 17:23:31 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#index as HTML
+  [1m[35mDoctorprofile Load (0.2ms)[0m  SELECT "doctorprofiles".* FROM "doctorprofiles"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered doctorprofiles/index.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/doctorp" for 193.1.209.156 at 2017-08-03 17:25:06 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/doctorp"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.0ms)
+
+
+Started GET "/doctorprofiles" for 193.1.209.156 at 2017-08-03 17:25:28 +0000
+Cannot render console from 193.1.209.156! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#index as HTML
+  [1m[36mDoctorprofile Load (0.3ms)[0m  [1mSELECT "doctorprofiles".* FROM "doctorprofiles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered doctorprofiles/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.5ms)

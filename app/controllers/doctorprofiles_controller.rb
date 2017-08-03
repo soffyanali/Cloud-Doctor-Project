@@ -1,5 +1,17 @@
 class DoctorprofilesController < ApplicationController
   before_action :set_doctorprofile, only: [:show, :edit, :update, :destroy]
+  
+  
+  
+  def signedinuserdoctorprofile
+doctorprofile = Doctorprofile.find_by_user_id(current_user.id)
+if doctorprofile.nil?
+redirect_to "/doctorprofiles/new"
+else
+@doctorprofile = Doctorprofile.find_by_user_id(current_user.id)
+redirect_to "/doctorprofiles/#{@doctorprofile.id}"
+end
+end
 
   # GET /doctorprofiles
   # GET /doctorprofiles.json
@@ -13,9 +25,14 @@ class DoctorprofilesController < ApplicationController
   end
 
   # GET /doctorprofiles/new
-  def new
-    @doctorprofile = Doctorprofile.new
-  end
+def new
+@doctorprofile = Doctorprofile.new
+@doctorprofile.user_id = current_user.id
+respond_to do |format|
+format.html # new.html.erb
+format.json { render json: @doctorprofile }
+end
+end
 
   # GET /doctorprofiles/1/edit
   def edit
