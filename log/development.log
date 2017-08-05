@@ -3593,3 +3593,228 @@ Processing by LocationsController#show as HTML
   Rendered locations/show.html.erb within layouts/application (2.0ms)
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
 Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/" for 37.228.246.231 at 2017-08-05 22:09:03 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 25ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 37.228.246.231 at 2017-08-05 22:09:04 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (62.9ms)
+Completed 200 OK in 497ms (Views: 486.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 37.228.246.231 at 2017-08-05 23:12:45 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 25ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 37.228.246.231 at 2017-08-05 23:12:45 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (59.6ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `stripe' for #<Rails::Application::Configuration:0x000000020f40e0>):
+     6:     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+     7: 
+     8:   <script type="text/javascript">
+     9:     Stripe.setPublishableKey('<%= Rails.configuration.stripe[:publishable_key] %>');
+    10:   </script>
+    11:   <title>Doctorpro</title>
+    12:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1787352418950741999_34179500'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.4ms)
+
+
+Started GET "/" for 37.228.246.231 at 2017-08-05 23:20:01 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PtRecordsController#index as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 37.228.246.231 at 2017-08-05 23:20:01 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 570ms (Views: 559.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 37.228.246.231 at 2017-08-05 23:20:06 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vL8bXEkHDpnqgufVVAplea2DdOHn9c+iG0pf551hzv5eeAtI1MsyX2y9o7ia/Sl0wKHGSQ9Yi8Nor3ANZCO1sg==", "user"=>{"email"=>"shhh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "shhh@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-08-03 18:12:59.804182"], ["current_sign_in_at", "2017-08-05 23:20:06.269767"], ["current_sign_in_ip", "37.228.246.231"], ["sign_in_count", 8], ["updated_at", "2017-08-05 23:20:06.271373"], ["id", 4]]
+  [1m[36m (17.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/signedinuserdoctorprofile
+Completed 302 Found in 220ms (ActiveRecord: 18.7ms)
+
+
+Started GET "/signedinuserdoctorprofile" for 37.228.246.231 at 2017-08-05 23:20:06 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#signedinuserdoctorprofile as HTML
+  [1m[35mUser Load (2.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mDoctorprofile Load (0.3ms)[0m  [1mSELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1[0m  [["user_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."user_id" = ? LIMIT 1  [["user_id", 4]]
+Redirected to https://rubydoctorproject-soffyanali.c9users.io/doctorprofiles/1
+Completed 302 Found in 56ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/doctorprofiles/1" for 37.228.246.231 at 2017-08-05 23:20:06 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by DoctorprofilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDoctorprofile Load (1.0ms)[0m  [1mSELECT  "doctorprofiles".* FROM "doctorprofiles" WHERE "doctorprofiles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered doctorprofiles/show.html.erb within layouts/application (41.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 112ms (Views: 108.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/locations" for 37.228.246.231 at 2017-08-05 23:20:15 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (21.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 61ms (Views: 45.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locations/new" for 37.228.246.231 at 2017-08-05 23:20:43 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (4.0ms)
+  Rendered locations/new.html.erb within layouts/application (6.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 37.228.246.231 at 2017-08-05 23:21:13 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (52.7ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `payments_path' for #<#<Class:0x007f335e1e0fd0>:0x007f335e3ecc48>):
+    10: <% end %>
+    11: 
+    12: 
+    13: <%= form_tag payments_path, method: 'post', id: 'payment-form' do %>
+    14:   <span class="payment-errors"></span>
+    15: 
+    16:   <div class="form-row">
+  app/views/locations/index.html.erb:13:in `_app_views_locations_index_html_erb__1118331671633989574_69929296713760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.7ms)
+
+
+Started GET "/locations" for 37.228.246.231 at 2017-08-05 23:21:26 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (16.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/doctorprofiles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-d2e5ccad1506299feea3a35bfb7c525e101bb3b214303715deb675fdc539948b.css?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pt_records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/doctorprofiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:27 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 37.228.246.231 at 2017-08-05 23:21:28 +0000
+Cannot render console from 37.228.246.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateInsts (20170805233242)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "insts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar, "lastname" varchar, "manufacturer" varchar, "cost" decimal, "description" varchar, "color" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170805233242"]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_doctorprofiles_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_doctorprofiles_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
