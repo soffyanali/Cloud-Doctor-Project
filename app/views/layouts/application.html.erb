@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <title>Doctorpro</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-<% if user_signed_in? %>
-<div>Signed in as... <%= current_user.email %>
-(<%= link_to 'Sign out', destroy_user_session_path,
-:method => :delete%>)
-</div>
-<% else %>
-<%= link_to 'Register', new_user_registration_path %> or
-<%= link_to 'Sign in', new_user_session_path %>
-<% end %>
-
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Doctorpro" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Doctorpro" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+  
+  <%= image_tag('img1.jpg', style: "height: 200px; width: 990px") %>
+  <body>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    
+    
+    <main role="main">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </main>
+  </body>
 </html>

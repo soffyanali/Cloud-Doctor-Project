@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   #resources :dtrecords
   devise_for :users
   resources :pt_records
-  root 'pt_records#index'
+  # root 'pt_records#index'
+  root 'pt_records#new'
+  
+  
   #get '/signedinuserdtrecord' => 'dtrecords#signedinuserdtrecord'
   get '/signedinuserdoctorprofile' => 'doctorprofiles#signedinuserdoctorprofile'
   
