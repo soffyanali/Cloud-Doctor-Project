@@ -10,10 +10,6 @@
   <%= @pt_record.lastname %>
 </p>
 
-<p>
-  <strong>String:</strong>
-  <%= @pt_record.string %>
-</p>
 
 <p>
   <strong>Email:</strong>
@@ -32,4 +28,7 @@
 
 <%= link_to 'Edit', edit_pt_record_path(@pt_record) %> |
 <%= link_to 'Back', pt_records_path %>
+<p>
+<%= link_to 'Other hospitals', new_location_path %>
+</p>
 

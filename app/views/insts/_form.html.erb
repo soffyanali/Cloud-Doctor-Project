@@ -20,21 +20,25 @@
     <%= f.text_field :lastname %>
   </div>
   <div class="field">
-    <%= f.label :manufacturer %><br>
-    <%= f.text_field :manufacturer %>
+        <%= f.label :manufacturer %><br>
+<%= f.select :manufacturer, [ 'GMP','IrePTV','CorkLTd' ], :prompt => 'Select One' %>
   </div>
-  <div class="field">
-    <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
+
+
   <div class="field">
     <%= f.label :color %><br>
-    <%= f.text_field :color %>
+<%= f.select :color, [ 'Blue','yellow','grey' ], :prompt => 'Select One' %>
   </div>
+  <div class="field">
+Stethoscope (40 EU):
+<%= check_box_tag 'inst[windows]', 'windows' %>
+</div>
+
+  <div class="field">
+Sphygmomanometer (50EU):
+<%= check_box_tag 'inst[devise2]', 'devise2' %>
+</div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

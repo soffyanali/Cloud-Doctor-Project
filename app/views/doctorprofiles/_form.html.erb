@@ -20,12 +20,16 @@
     <%= f.text_field :lastname %>
   </div>
   <div class="field">
-    <%= f.label :qualification %><br>
-    <%= f.text_field :qualification %>
+    <%= f.label :Qualification %><br>
+<%= f.select :qualification, [ 'Peadiatrics ','Radiology','Surgery','Gynaecology' ], :prompt => 'Select One' %>
+
   </div>
+  
+ 
   <div class="field">
-    <%= f.label :clinic %><br>
-    <%= f.text_field :clinic %>
+        <%= f.label :Hospital %><br>
+<%= f.select :clinic, [ 'Mater Hospital ','St.James Hospital','Blackrock Hospital','Coombe Children Hospital' ], :prompt => 'Select One' %>
+
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
