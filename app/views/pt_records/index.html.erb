@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+
+
+
 <h1>Listing Pt Records</h1>
 
 <table>
@@ -31,6 +34,13 @@
     <% end %>
   </tbody>
 </table>
+
+
+<%= form_tag(pt_records_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Patiens" %>
+<%= submit_tag "Search" %>
+<% end %>
+
 
 <br>
 <% if user_signed_in? %>

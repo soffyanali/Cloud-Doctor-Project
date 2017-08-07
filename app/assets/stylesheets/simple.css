@@ -20,6 +20,7 @@ ul.nav li {
   display: inline;
 }
 ul.nav li a {
+  display: inline;
   padding: 10px 15px 10px;
   color: #777777;
   text-decoration: none;

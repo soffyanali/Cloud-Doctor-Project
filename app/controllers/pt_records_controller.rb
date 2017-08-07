@@ -5,7 +5,15 @@ class PtRecordsController < ApplicationController
   # GET /pt_records.json
   def index
     @pt_records = PtRecord.all
+     if params[:search]
+    @pt_records = PtRecord.search(params[:search]).order("created_at DESC")
+  else
+    @pt_records = PtRecord.all.order('created_at DESC')
   end
+  end
+
+ 
+
 
   # GET /pt_records/1
   # GET /pt_records/1.json
