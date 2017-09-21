@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
 
+  resources :weathers
   resources :insts
   resources :locations
   resources :doctorprofiles
